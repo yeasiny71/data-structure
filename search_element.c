@@ -29,7 +29,7 @@ int main()
     index = search(keyToSearch);
 
     if (index >= 0)
-        printf("%d found in the list at position %d\n", keyToSearch, index + 1);
+        printf("%d found in the list at position %d\n", keyToSearch, index);
     else
         printf("%d not found in the list.\n", keyToSearch);
 
@@ -91,7 +91,7 @@ int search(int key)
     int index;
     struct node *curNode;
 
-    index = 0;
+    index = 1;
     curNode = head;
     while (curNode != NULL && curNode->data != key)
     {
